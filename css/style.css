@@ -1,0 +1,14 @@
+:root{
+    --green: #a8ca1b;
+    --blue: #232f3e;
+    --withe: #ffffff;
+
+    --fuentePricipal: 'Open Sans', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
