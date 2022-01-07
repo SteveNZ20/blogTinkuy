@@ -144,3 +144,9 @@ footer{
 .prodcuto__informacion:hover{
     background-color: #6d8703;
 }
+.contacto-bg{
+    background: url(../img/fondo.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
