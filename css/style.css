@@ -1,4 +1,5 @@
 :root{
+    --lightGreen: #d8e993;
     --green: #a8ca1b;
     --blue: #232f3e;
     --withe: #ffffff;
@@ -18,7 +19,29 @@ a{
     color: var(--withe);
 }
 p{
+    font-size: 2.3rem;
     color: #000;
+}
+h1{
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
+h2{
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+h3{
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
 }
 img {
     width: 100%;
@@ -29,6 +52,13 @@ body{
 /*--------------------------*/
 header{
     background-color: var(--blue);
+}
+label{
+    font-size: 2rem;
+    font-weight: 500;
+}
+input{
+    font-size: 1.8rem;
 }
 .container{
     max-width: 120rem;
@@ -149,4 +179,122 @@ footer{
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.formulario{
+    background-color: var(--lightGreen);
+    margin: -5rem auto 0 auto;
+    width: 90%;
+    padding: 5rem;
+}
+@media (min-width: 768px) {
+    .formulario{
+        width: 95%;
+    }
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+    margin-left: -3rem;
+}
+.campo__field{
+    flex: 1;
+    border: .1rem solid var(--blue);
+    width: 80%;
+}
+.campo__field--textarea{
+    height: 10rem;
+}
+.boton{
+    display: block;
+    font-family: var(--fueteHeading);
+    font-size: 2rem;
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
+}
+.boton--primario{
+    background-color: var(--green);
+    margin: 3.6rem 0 0 7.5rem;
+}
+@media (min-width: 768px) {
+    .boton--primario{
+        display: inline-block;
+    }
+}
+@media (min-width: 768px) {
+    .campo__field{
+        flex: 1;
+        border: .1rem solid var(--blue);
+    }
+    .campo__field--textarea{
+        height: 10rem;
+    }
+}
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    margin: 0 1.5rem;
+}
+@media (min-width: 768px) {
+    .nosotros{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+        
+}
+.nosotros__imagen{
+    grid-row: 1/2;
+    width: 80%;
+    margin: auto;
+}
+@media (min-width: 768px) {
+    .nosotros__imagen{
+        grid-column: 2/3;
+        width: 50%;
+    }
+}
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);      /*organizar en columnas usando grid*/
+    gap: 2rem;                                  /*separacion de las columnas*/
+    margin: 0 1.5rem;
+}
+@media (min-width: 768px) {
+    .bloques{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.bloque{
+    text-align: center;
+}
+.bloque__imagen{
+    width: 100%;
+    background-color: var(--lightGreen);
+    border-radius: 2rem;
+}
+.bloque__titulo{
+    margin: 0;
+}
+/*producto*/
+@media (min-width: 768px) {
+    .product{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.product__imagen{
+    width: 100%;
 }
